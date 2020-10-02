@@ -1,11 +1,3 @@
-p {
+.test {
     color: red;
-}
-
-.image {
-    width: 50px;
-}
-
-#testid {
-    background-color: blue;
 }
