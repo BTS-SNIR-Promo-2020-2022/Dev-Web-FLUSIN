@@ -1,3 +1,15 @@
-.test {
+.divn1 {
+    border: black dotted;
+    padding: 10px;
+    margin-left: 10px;
+    width: 60%;
+}
+
+em {
     color: red;
+    font-style: normal;
+}
+
+span.techos {
+    background-color: lightgreen;
 }
