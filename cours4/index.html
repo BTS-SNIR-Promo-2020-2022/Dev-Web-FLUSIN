@@ -11,12 +11,25 @@
 </head>
 
 <body>
-    <form action="test.php" method="POST">
+    <form action="" method="">
         <label for="age_input">Âge (Années)</label>
         <input id="age_input" type="number" size="1" placeholder="âge" value="19" required/>
         <br />
         <label for="temp_input">Température (°C)</label>
         <input id="temp_input" type="number" size="1" placeholder="nombre" value="37" min="36" max="42" step="0.1" required />
+        <br />
+        <label for="password_input">Mot de passe</label>
+        <input id="password_input" type="password" size="1" placeholder="mot de passe" required/>
+        <br />
+        <p>Menu</p>
+        <input id="checkbox_bbq" type="checkbox" />
+        <label for="checkbox_bbq">Sauce BBQ</label>
+        <br />
+        <input id="checkbox_cf" type="checkbox" />
+        <label for="checkbox_cf">Crème Fraiche</label>
+        <br />
+        <input id="checkbox_tomate" type="checkbox" />
+        <label for="checkbox_tomate">Sauce Tomate</label>
         <br />
         <button>Valider</button>
     </form>
