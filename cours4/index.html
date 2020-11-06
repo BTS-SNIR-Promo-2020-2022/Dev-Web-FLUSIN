@@ -11,25 +11,35 @@
 </head>
 
 <body>
-    <form action="" method="">
+    <form action="test.php" method="POST">
         <label for="age_input">Âge (Années)</label>
-        <input id="age_input" type="number" size="1" placeholder="âge" value="19" required/>
+        <input id="age_input" type="number" size="1" placeholder="âge" value="19" />
         <br />
         <label for="temp_input">Température (°C)</label>
-        <input id="temp_input" type="number" size="1" placeholder="nombre" value="37" min="36" max="42" step="0.1" required />
+        <input id="temp_input" type="number" size="1" placeholder="nombre" value="37" min="36" max="42" step="0.1" />
         <br />
         <label for="password_input">Mot de passe</label>
-        <input id="password_input" type="password" size="1" placeholder="mot de passe" required/>
+        <input id="password_input" type="password" size="1" placeholder="mot de passe" />
         <br />
         <p>Menu</p>
-        <input id="checkbox_bbq" type="checkbox" value="bbq" />
+        <input id="checkbox_bbq" type="checkbox" value="bbq" name="sauce" />
         <label for="checkbox_bbq">Sauce BBQ</label>
         <br />
-        <input id="checkbox_cf" type="checkbox" value="cf" />
+        <input id="checkbox_cf" type="checkbox" value="cf" name="sauce" />
         <label for="checkbox_cf">Crème Fraiche</label>
         <br />
-        <input id="checkbox_tomate" type="checkbox" value="tomate" checked/>
+        <input id="checkbox_tomate" type="checkbox" value="tomate" checked name="sauce" />
         <label for="checkbox_tomate">Sauce Tomate</label>
+        <br />
+        <p>Chosissez un mode de paiement :</p>
+        <input id="radio_cb" type="radio" name="pm" value="cb" />
+        <label for="radio_cb">CB</label>
+        <br />
+        <input id="radio_cheque" type="radio" name="pm" value="cheque" />
+        <label for="radio_cheque">Chèque</label>
+        <br />
+        <input id="radio_paypal" type="radio" name="pm" value="paypal" />
+        <label for="radio_paypal">Paypal</label>
         <br />
         <button>Valider</button>
     </form>
