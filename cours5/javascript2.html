@@ -12,9 +12,10 @@
 
 <body>
     <p id="texte">Texte par défaut</p>
-    <button onclick="
-    text = 'js';
-    document.getElementById('texte').innerHTML = text;">Cliquez ici !</button>
+    <button onmouseover="text = 'js';
+    document.getElementById('texte').style.fontSize = '60px';">+</button>
+    <button onmouseover="text = 'js';
+    document.getElementById('texte').style.fontSize = '20px';">-</button>
 </body>
 
 </html>
