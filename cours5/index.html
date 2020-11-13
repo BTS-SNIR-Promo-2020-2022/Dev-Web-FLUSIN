@@ -5,13 +5,47 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Cours 5</title>
-    <meta name="description" content="">
+    <meta name="description" content="Site de dev">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <form method="POST" action="https://flusin.fr/dev/dev.php">
+        <fieldset>
+            <legend>VOUS</legend>
+            <label for="input_nom">Nom :</label>
+            <input id="input_nom" name="nom" type="text" />
+            <br />
+            <br />
+            <label for="input_prenom">Prénom :</label>
+            <input id="input_prenom" name="prenom" type="text" />
+            <br />
+            <br />
+            <label for="input_age">Âge :</label>
+            <input id="input_age" name="age" type="number" value=10 min="01" max="20" />
+            <br />
+            <br />
+            <label for="input_email">Email :</label>
+            <input id="input_email" name="email" type="email" placeholder="Votre email" />
+        </fieldset>
+        <fieldset>
+            <legend>VOTRE FORMATION</legend>
+            <label for="input_formation">BTS </label>
+            <select id="input_formation" name="formation">
+                <option value="Batiment" selected>Batiment</option>
+                <option value="sn">SN</option>
+                <option value="electro">Electro-Tech</option>
+            </select>
+            <br/>
+            <input id="input_1ere_annee" name="annee" value="1ere" type="radio" />
+            <label for="input_1ere_annee">1ere année</label>
+            <input id="input_2eme_annee" checked name="annee" value="2eme" type="radio" />
+            <label for="input_2eme_annee">2eme année</label>
+        </fieldset>
+        <input type="submit" />
+        <input type="reset" />
+    </form>
 </body>
 
 </html>
