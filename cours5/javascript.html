@@ -12,7 +12,13 @@
 
 <body>
     <script>
-        alert("abcde");
+        var rand = Math.random() * 200 - 100;
+        if (rand > 0) {
+            sqrt = Math.sqrt(rand);
+            alert(sqrt);
+        } else {
+            alert("Impossible car rand=" + rand);
+        }
     </script>
 </body>
 
