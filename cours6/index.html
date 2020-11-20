@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SOS COVID</title>
+    <meta name="description" content="SOS COVID">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="POST" action="https://flusin.fr/dev/dev.php">
+        <legend>SOS COVID</legend>
+        <div>
+            <div>
+                <label for="input_nom">Votre nom :</label>
+                <input id="input_nom" name="nom" type="text" placeholder="(tapez ici)" />
+            </div>
+            <div>
+                <label for="input_prenom">Votre prénom :</label>
+                <input id="input_prenom" name="prenom" type="text" placeholder="(tapez ici)" />
+            </div>
+            <div>
+                <label for="input_age">Votre âge :</label>
+                <input id="input_age" name="age" type="number" min="01" max="99" />
+            </div>
+        </div>
+        <div>
+            <div>
+                <input id="input_toux" name="symptomes" value="toux" type="checkbox" />
+                <label for="input_toux">Je tousse</label>
+            </div>
+            <div>
+                <input id="input_fievre" name="symptomes" value="fievre" type="checkbox" checked/>
+                <label for="input_fievre">J'ai de la fièvre</label>
+            </div>
+            <div>
+                <input id="input_nez" name="symptomes" value="nez" type="checkbox" />
+                <label for="input_nez">Nez qui coule</label>
+            </div>
+        </div>
+        <label for="input_centre_de_depistage">Centre de dépistage </label>
+        <select id="input_centre_de_depistage" name="centre_de_depistage">
+                <option value="CHU_Bordeaux" selected>Chu Bordeaux</option>
+                <option value="Arkea_Arena">Arkea Arena</option>
+                <option value="Accolab_Sud_Ouest_Gallieni">Accolab Sudo Ouest Gallieni</option>
+            </select>
+        <div>
+
+            <div>
+                <input id="only_medecin" name="qui_prevenir" value="only_medecin" type="radio" />
+                <label for="only_medecin">Prévenir seulement mon médecin traitant</label>
+            </div>
+            <div>
+                <input id="me_too" checked name="qui_prevenir" value="me_too" type="radio" />
+                <label for="me_too">Me prévenir aussi</label>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Valider" />
+            <input type="reset" value="Effacer" />
+        </div>
+    </form>
+</body>
+
+</html>
