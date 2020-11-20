@@ -12,14 +12,13 @@
 
 <body>
     <script>
-        function carre(value) {
-            let resultat = value * value;
-            alert(value + '² = ' + resultat);
+        function message(message) {
+            alert(message);
         }
     </script>
     <label for="saisie">Saisir quelque chose</label>
     <input type="number" id="saisie" />
-    <button onclick="carre(document.getElementById('saisie').value);">ALERT</button>
+    <button onclick="message(document.getElementById('saisie').value);">ALERT</button>
 </body>
 
 </html>
