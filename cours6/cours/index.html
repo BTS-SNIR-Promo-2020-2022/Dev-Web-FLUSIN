@@ -10,16 +10,10 @@
     <link rel="stylesheet" href="">
 </head>
 
-<script>
-    var x, y, z;
-    x = 5;
-    y = 6;
-    z = x + y;
-    window.alert('z = ' + z);
-</script>
-
 <body>
-    <img id="image-test" src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg" onclick="fonction();" width="512px" />
+    <label for="saisie">Saisir quelque chose</label>
+    <input tpe="text" id="saisie" />
+    <button onclick="alert('vous avez tapé : ' + document.getElementById('saisie').value)">ALERT</button>
 </body>
 
 </html>
