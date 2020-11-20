@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="">
 </head>
 
+<script>
+    function fonction() {
+        document.getElementById('image-test').src = 'https://pbs.twimg.com/media/DfkhrO1XUAEYkdw.jpg';
+    }
+</script>
+
 <body>
-    <img id="image-test" src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg" onclick="this.src='https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/07/solar_orbiter_s_first_views_of_the_sun5/22136942-2-eng-GB/Solar_Orbiter_s_first_views_of_the_Sun_pillars.gif'"
-    />
+    <img id="image-test" src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg" onclick="fonction();" width="512px" />
 </body>
 
 </html>
