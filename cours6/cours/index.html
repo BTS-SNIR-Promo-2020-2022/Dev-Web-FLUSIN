@@ -15,10 +15,15 @@
         function message(message) {
             alert(message);
         }
+
+        function racinecarree(x) {
+            var racine = Math.sqrt(x);
+            return racine;
+        }
     </script>
     <label for="saisie">Saisir quelque chose</label>
     <input type="number" id="saisie" />
-    <button onclick="message(document.getElementById('saisie').value);">ALERT</button>
+    <button onclick="message(racinecarree(getElementById('saisie').value));">ALERT</button>
 </body>
 
 </html>
