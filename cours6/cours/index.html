@@ -11,9 +11,14 @@
 </head>
 
 <body>
+    <script>
+        function ok() {
+            alert('vous avez tapé : ' + document.getElementById('saisie').value);
+        }
+    </script>
     <label for="saisie">Saisir quelque chose</label>
     <input tpe="text" id="saisie" />
-    <button onclick="alert('vous avez tapé : ' + document.getElementById('saisie').value)">ALERT</button>
+    <button onclick="ok();">ALERT</button>
 </body>
 
 </html>
