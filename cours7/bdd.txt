@@ -1,0 +1,31 @@
+-----MOTS CLES-----
+SQL,
+mysql, mariadb, mongodb, redis, influxdb,
+bdd,
+pdo, php-mysql,
+index, clé / valeurs, stockage organisé et indexé,
+SELECT / CREATE / INSERT,
+port 3306, phpmyadmin / pma, application web,
+-----MOTS CLES-----
+-----NOTES-----
+Requête d'interrogation sur des critères (SELECT)
+données dans des tableaux(tables), 
+relations entre les données, 
+champs (colonnes / attributs) dans les tables,
+un enregistrement est une ligne,
+chaque enregistrement est désigné par un identifiant appelé "clef primaire" --> attribut qui est unique pour chaque enregistrement,
+C,R,U,D (CREATE,READ,UPDATE,DELETE)->SQL (INSERT,SELECT,UPDATE,DELETE)
+INSERT INTO <nom_table> (Champ1, Champ2) VALUES (Valeur1, Valeur2);
+SELECT <colonnes> FROM <table> WHERE <condition> ORDER BY COLUMNS <colonnes>;
+UPDATE <nom_table> SET Champ1=Valeur1,Champ2=Valeur2 WHERE conditions;
+DELETE FROM <nom_table> WHERE <conditions>;
+-----NOTES-----
+EXO:
+INSERT INTO adherents (nom,prenom,age) VALUES ('Bon','Jean',20);
+INSERT INTO materiel (designation,sport,tarif) VALUES ('skate_board','skate',15);
+
+SELECT * FROM materiel;
+SELECT * FROM adherents WHERE nom='Bon';
+SELECT * FROM materiel WHERE sport='ski';
+SELECT * FROM materiel WHERE prix < 30;
+SELECT * FROM adherents WHERE prenom LIKE 'Jean-%';
