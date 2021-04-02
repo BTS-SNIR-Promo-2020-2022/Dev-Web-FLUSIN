@@ -1,0 +1,10 @@
+SELECT * FROM pizzas;
+SELECT * FROM pizzas WHERE prix < 12;
+SELECT * FROM pizzas WHERE prix > 10 AND prix < 15;
+SELECT * FROM pizzas WHERE ingredients LIKE '%tomate%';
+UPDATE pizzas SET nom='Margherita' WHERE nom = 'Margarita';
+UPDATE pizzas SET prix = 11 WHERE id = 5;
+UPDATE pizzas SET prix =  prix + 1;
+INSERT INTO pizzas (nom,ingredients,prix) VALUES ('4 formaggi','emmental, chevre, gorgonzola, parmesan',13);
+DELETE FROM pizzas WHERE id = 17;
+DELETE FROM pizzas WHERE ingredients = '%thon%';
